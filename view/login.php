@@ -36,19 +36,20 @@ require "../controller/connect.php";
     <?php endif; ?>
     <?php unset($_SESSION['flash']) ?>
     <div class="admin">
-      <form action="" method="post">
-        <label for="user"><i class="fas fa-portrait"></i></label><input type="text" name="username" size="25" id="user" placeholder="Username ou adress email"><br>
-        <label for="pass"><i class="fas fa-lock"></i></label><input type="password" name="password" size="25" id="pass" placeholder="Password"><br>
+      <form id="form" method="post">
+        <label for="user"><i class="fas fa-portrait"></i></label><input type="text" name="username" size="25" id="user" placeholder="Username ou adress email" autofocus><br>
+        <label for="pass"><i class="fas fa-lock"></i></label><input type="password" name="password" size="25" id="pass" placeholder="Password" autofocus><br>
         <div class="suppl">
           <input type="checkbox" name="connect" id="session"><label for="session" class="check">Gardez ma session active</label>
           <p><a href="../view/forgot.php">Mot de passe oublié</a></p>
         </div>
         <div class="btn">
-          <button type="submit" name="submit" class="btn-primary">Se connecter</button>
+          <button type="submit" id="login" name="submit" class="btn-primary">Se connecter</button>
         </div>
       </form>
     </div>
   </div>
+  <script src=""></script>
 </body>
 
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./public/vendors/bulma-0.8.0/css/bulma.min.css"
+    />
+    <title>Acceuil</title>
+  </head>
+  <body>
+    <div class="head-page">
+      <div class="head-site">
+        <p><img src="./public/images/lg.png" alt="log" /></p>
+      </div>
+      <div class="main">
+        <ul>
+          <li><a href="./index.html">Acceuil</a></li>
+          <li><a href="./view/login.php">Connexion</a></li>
+          <li><a href="./view/about.php">À propos</a></li>
+          <li><a href="./view/contact.php">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container"></div>
+    </div>
+    <section class="section">
+      <div class="container"></div>
+    </section>
+    <!--  charger mes scripts javascript  -->
+    <script src="./public/vendors/jquery-3.5.0.min.js"></script>
+    <script src="./public/js/anim.js"></script>
+  </body>
+</html>

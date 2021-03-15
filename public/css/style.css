@@ -2,11 +2,18 @@
    margin: 0px;
    padding: 0px;
 
+
  }
 
  #cntnt {
    background-color: #1a43b6;
    padding-bottom: 5.6rem;
+
+ }
+
+ #cntnt-validate {
+   background-color: #1a43b6;
+   padding-bottom: 11.6rem;
 
  }
 
@@ -64,16 +71,11 @@
  }
 
  input {
-   border: none;
+   border: 1px solid #001529;
    border-radius: 8px 10px 10px 8px;
    text-align: center;
  }
 
- input:focus {
-   border: none;
-   border-bottom: 3px solid black;
-   border-right: 3px rgb(69, 87, 168);
- }
 
  .suppl {
    display: block;
@@ -91,6 +93,26 @@
    margin-left: 25px;
    margin-top: -5px;
  }
+
+ .validate {
+   margin-left: 1.5rem;
+   margin-bottom: 0.7rem;
+ }
+
+ .validate input {
+   border: 2px solid #000;
+ }
+
+ .code {
+   display: block;
+   width: 150px;
+   background-color: #be0c0c;
+   border-radius: 3%;
+   text-align: center;
+   padding: auto;
+ }
+
+ /*.lien {}*/
 
  .btn {
    display: flex;
@@ -157,6 +179,7 @@
  .flash-success {
    display: block;
    width: 380px;
+   height: 7vh;
    padding: 10px 10px 10px 10px;
    margin: auto;
    margin-top: 20px;
@@ -192,6 +215,57 @@
    padding-bottom: -7px;
    color: #eef0f7;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   box-shadow: 10px 5px 5px #000;
+
+ }
+
+ .head-page {
+   display: flex;
+   align-self: baseline;
+   flex-direction: row;
+   justify-content: space-between;
+   background-color: #0838bb;
+   height: 7vh;
+ }
+
+ .head-site {
+   display: flex;
+
+ }
+
+ .head-site p>img {
+   display: block;
+   width: 3.5rem;
+   border-radius: 100%;
+ }
+
+ #main-content {
+   padding-left: rem;
+ }
+
+ .main {
+   display: flex;
+   margin-top: 0.7rem;
+
+
+ }
+
+ .main ul {
+   display: flex;
+ }
+
+ .main ul li {
+   margin-right: 1rem;
+   color: #d4eb44;
+ }
+
+ .main ul li>a {
+   color: #edeeea;
+ }
+
+ .main ul li>a:hover {
+   transition: 1s;
+   color: #000;
  }
 
  .img-img {
@@ -227,18 +301,382 @@
  /*Containt*/
  #page {
    background-color: #d7d8eb;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-   grid-column: 20%;
-   grid-row: 20px;
+   display: flex;
+   justify-content: first baseline;
+   align-content: center;
+   padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
+
+
  }
 
- #space {
-   grid-column: 1;
-   grid-row: 1/span 4;
-   display: grid;
-   grid-template-rows: 2fr 2fr 2fr;
-   border: 3px solid;
+ #sidebar {
+   display: flex;
+   flex-direction: column;
+   background-color: #001529;
+   width: 250px;
+   height: 82.2vh;
+   box-shadow: 1rem 1rem #0000;
+   margin-top: 1.6rem;
+   margin-bottom: -1rem;
+   padding-top: 1rem;
+   padding-bottom: 0rem;
+   padding-left: 0.2rem;
+   padding-right: 0.2rem;
+   color: rgb(255, 255, 255);
+ }
 
+ .info {
+   display: flex;
+   align-content: center;
+   align-items: baseline;
+   flex-direction: column;
+ }
+
+ .dashboard {
+   display: flex;
+   margin-left: 2rem;
+   margin-top: 0.4rem;
+   margin-bottom: 0.7rem;
+ }
+
+ .dashboard h5 a {
+   color: #eef0f7;
+ }
+
+ .dashboard h5>a>i {
+   padding-right: 0.3rem;
+ }
+
+ .title-info {
+   display: flex;
+   align-items: baseline;
+   align-content: center;
+   background-color: #012c55;
+   height: 4vh;
+   width: 100%;
+   border-radius: 0.4rem;
+   margin-right: 0rem;
+   padding-right: 1rem;
+   padding-left: 1rem;
+   padding-top: 3px;
+ }
+
+ .title-info h6 {
+   margin-left: 0.4rem;
+ }
+
+ .info-user {
+   display: flex;
+   align-content: center;
+   align-items: baseline;
+   margin-left: 1.8rem;
+ }
+
+ .info-user p {
+   margin-left: 13px;
+   font-size: 1em;
+ }
+
+ .space-content {
+   display: flex;
+   align-content: center;
+   align-items: baseline;
+   flex-direction: column;
+ }
+
+
+ .space-content h6 {
+   margin-left: 0.7rem;
+ }
+
+ .new-patient {
+   display: flex;
+   align-content: center;
+   align-items: baseline;
+   margin-left: 1.8rem;
+ }
+
+ .new-patient p {
+   margin-left: 13px;
+   width: 100%;
+ }
+
+ .new-patient a {
+   color: #eef0f7;
+ }
+
+ .new-patient p:hover {
+   background-color: #012c55;
+ }
+
+ .docteur {
+   display: flex;
+   align-content: center;
+   align-items: baseline;
+   flex-direction: column;
+
+ }
+
+ .link {
+   display: flex;
+   align-content: center;
+   align-items: baseline;
+ }
+
+ .link ul {
+   flex-direction: column;
+ }
+
+ .link li {
+   list-style: none;
+   text-decoration: none;
+
+ }
+
+ .link li a {
+   color: rgb(255, 255,
+       255);
+ }
+
+ .link li a i {
+   margin-right: 0.4rem;
+ }
+
+ .version {
+   border-top: 3px solid #012c55;
+   align-content: center;
+   padding-left: 0.4rem;
+   padding-top: 0.4rem;
+ }
+
+ #main-content {
+   display: flex;
+   margin-top: 2rem;
+   width: 70%;
+   margin-left: 3rem;
+ }
+
+ /*  content acceuil */
+ .content {
+   background-color: #000;
+ }
+
+ section {
+   background-color: #9f9fb9;
+   margin-top: -1.5rem;
+ }
+
+ /*.title {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-decoration: underline blue;
+ }*/
+
+ .interne {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   margin-top: 1rem;
+ }
+
+ .img-interne {
+   display: flex;
+ }
+
+
+ /*formulaire d'enregistrement du patient*/
+ .register-patient {
+   display: block;
+   width: 100%;
+   height: 100%;
+   box-shadow: 10px 5px 5px #000 10px 5px 5px;
+
+ }
+
+ .title-register {
+   display: inline-block;
+   margin-left: 7rem;
+   border-bottom: 0.1rem solid #1a43b6;
+   width: 15rem;
+   align-content: center;
+   margin-bottom: 0.5rem;
+ }
+
+ .title-register>h5 {
+   display: inline-block;
+   font-style: normal;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding-right: 1.5rem;
+   margin-top: 1rem;
+   margin-left: 1rem;
+
+ }
+
+ .form fieldset {
+   margin-left: 1rem;
+ }
+
+ .form {
+   display: block;
+   margin: auto;
+   width: 80%;
+   background-color: #6c6f7a;
+   border-radius: 1rem;
+   padding-bottom: 2rem;
+   padding-top: 1px;
+   margin-top: 0.5rem;
+   padding-left: 2rem;
+   padding-right: -2.5rem;
+   color: #ffff;
+ }
+
+ .form-group label {
+   margin-right: -0.3px;
+   margin-left: 2px;
+ }
+
+ .register-signe #temperature {
+   width: 5rem;
+ }
+
+ .form-group span {
+   color: rgb(218,
+       8,
+       8);
+   background-color: #2e8f2b;
+ }
+
+
+
+ .form form {
+   margin-left: 0.8rem;
+ }
+
+ .form select {
+   border-radius: 0.3rem;
+ }
+
+ .btn-register {
+   margin-left: 15rem;
+   margin-top: 1.5rem;
+ }
+
+
+ /* pied de la page */
+ footer {
+   width: 100%;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   background-color: #b6b6b6;
+   color: white;
+   margin-top: -0.5rem;
+ }
+
+ .foot {
+   text-align: center;
+   margin-top: 0.8rem;
+ }
+
+ /* page consult */
+ .search {
+   margin-top: 1.2rem;
+
+ }
+
+ section {
+   margin-top: 1.5rem;
+   padding: 2rem;
+   border-radius: 1rem;
+ }
+
+ .title-search {
+   margin-top: -1.5rem;
+   background-color: #e2e3e7;
+
+ }
+
+ .title-search h6 {
+   padding-bottom: 0.3rem;
+   padding-top: 0.3rem;
+   padding-left: 5rem;
+   padding-right: 8rem;
+   margin: 0px;
+   color: #000;
+   align-items: center;
+   width: fit-content;
+ }
+
+ .form-search {
+   display: flex;
+   justify-content: space-between;
+   align-content: flex-start;
+   align-items: center;
+   margin-left: 12rem;
+   margin-top: -0.7rem;
+ }
+
+ .form-search form {
+   display: flex;
+
+
+ }
+
+ .form-search form>input {
+   height: 5vh;
+   margin-right: -1.51rem;
+   border-color: 2px solid gray;
+ }
+
+ .data-patient {
+   margin-top: 1rem;
+ }
+
+ .title-data {
+   background-color: #e2e3e7;
+ }
+
+ .title-data h5 {
+   padding-bottom: 0.3rem;
+   padding-top: 0.3rem;
+   padding-left: 5rem;
+   padding-right: 8rem;
+   margin: 0px;
+   color: #000;
+   align-items: center;
+   width: fit-content;
+ }
+
+ .content-patient {
+   margin-top: 0.6rem;
+   border-bottom: 2px solid black;
+ }
+
+
+ .form-consult form {
+   display: flex;
+   justify-content: space-evenly;
+   align-content: center;
+   align-self: start;
+ }
+
+ .form-consult form .form-group {
+   display: flex;
+ }
+
+ .form-consult form>.form-group>textarea {
+   margin-top: 2.5rem;
+   height: 15vh;
+ }
+
+ .histo {
+   margin-left: -1rem;
+ }
+
+ .epy {
+   margin-right: 1rem;
+ }
+
+ .form-consult form .form-group>h5 {
+   margin-left: 2rem;
+   margin-bottom: 2rem;
  }
